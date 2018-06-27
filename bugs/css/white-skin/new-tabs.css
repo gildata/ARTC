@@ -1,0 +1,12 @@
+@charset "UTf-8";
+
+/* new-tabs.css */
+
+ul.h5-dnd-nav-ul>[data-nav-li="nav-li"] {
+    cursor: pointer;
+    user-select: none;
+}
+
+ul.h5-dnd-nav-ul>[data-nav-li="nav-li"]:nth-last-of-type(1) {
+    cursor: not-allowed;
+}

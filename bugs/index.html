@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <!-- change skin -->
+    <!-- <script src="./build/js/first.min.js"></script> -->
+    <link rel="stylesheet" data-css="data-css-uid" href="./css/white-skin/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webpack minify bug</title>
+    <!--[if lt IE 9]>
+        <script src="./libs/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="h5-dnd-header-container" data-header="data-header">
+        <nav class="h5-dnd-nav-container h5-dnd-nav-container-big" data-nav-container="nav-container">
+            <ul class="h5-dnd-nav-ul">
+                <li class="h5-dnd-nav-li-active no-bottom-margin" data-nav-li="nav-li">
+                    <a data-href="#" data-uid="tempaltes-a-link">tempaltes</a>
+                </li>
+                <li class="h5-dnd-nav-li-hidden add-bottom-margin" data-nav-li="nav-li">
+                    <a data-href="#" data-uid="modules-a-link">modules</a>
+                </li>
+                <li class="h5-dnd-nav-li-hidden add-bottom-margin" data-nav-li="nav-li">
+                    <a href="#module-settings" data-uid="settings-a-link"></a>
+                </li>
+            </ul>
+            <div class="h5-dnd-nav-box h5-dnd-nav-box-active" data-nav-box="nav-box">
+                <section class="h5-dnd-template-container ection-display" data-display="false">
+                    <div class="h5-dnd-template-box" data-uid="universal" data-title="universal">
+                        <p class="h5-dnd-template-p" data-title="universal">universal</p>
+                    </div>
+                    <div class="h5-dnd-template-box" data-uid="customize" data-title="customize">
+                        <p class="h5-dnd-template-p" data-title="customize">customize</p>
+                    </div>
+                </section>
+            </div>
+            <div class="h5-dnd-nav-box h5-dnd-nav-box-hidden" data-nav-box="nav-box">
+                <section class="h5-dnd-icon-container">
+                    <!-- left -->
+                    <div class="h5-dnd-icon-box" draggable="true" data-icon-uid="module-data-otcfast01" data-name="newly-added-listing">
+                        <p class="h5-dnd-icon-p" data-title="listing">listing</p>
+                    </div>
+                    <div class="h5-dnd-icon-box" draggable="true" data-icon-uid="module-data-otcfast02" data-name="newly-added-protocol">
+                        <p class="h5-dnd-icon-p" data-title="protocol">protocol</p>
+                    </div>
+                </section>
+            </div>
+            <div class="h5-dnd-nav-box h5-dnd-nav-box-hidden" data-nav-box="nav-box">
+                <section class="h5-dnd-module-container section-hidden" data-display="true"></section>
+            </div>
+            <div class="h5-dnd-nav-btn" data-nav-btn="nav-btn" title="sidebar"></div>
+        </nav>
+    </header>
+    <!-- tabs & webpack minify bug -->
+    <!-- <script src="./build/js/init-tabs.min.js"></script> -->
+    <!-- others miniy isok -->
+    <script src="./init-tabs.min.js"></script>
+</body>
+
+</html>
